@@ -11,8 +11,8 @@ spl_autoload_register(function($class) {
 });
 
 // Load core files
-require_once __DIR__ . '/../app/core/Database.php';
-require_once __DIR__ . '/../app/core/Router.php';
+require_once __DIR__ . '/../app/Core/Database.php';
+require_once __DIR__ . '/../app/Core/Router.php';
 
 // Inisialisasi Router
 $router = new Router();
