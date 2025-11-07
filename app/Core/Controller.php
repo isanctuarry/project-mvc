@@ -4,7 +4,7 @@ namespace App\Core;
 class Controller {
     protected function view($view, $data = []) {
         extract($data);
-        $viewPath = __DIR__ . '/../views/' . str_replace('.', '/', $view) . '.php';
+        $viewPath = __DIR__ . '/../Views/' . str_replace('.', '/', $view) . '.php';
         
         if(file_exists($viewPath)) {
             require_once $viewPath;
